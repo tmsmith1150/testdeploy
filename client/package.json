@@ -1,9 +1,12 @@
 {
   "name": "client",
   "private": true,
+  "homepage": "https://tmsmith1150.github.io/testdeploy",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -12,6 +15,7 @@
   "dependencies": {
     "@apollo/client": "^3.7.14",
     "bootstrap": "^5.2.3",
+    "gh-pages": "^6.1.1",
     "graphql": "^16.6.0",
     "jwt-decode": "^3.1.2",
     "react": "^18.2.0",
