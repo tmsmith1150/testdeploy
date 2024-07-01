@@ -11,13 +11,15 @@
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build",
-    "render-build": "npm install && npm run build"
+    "render-build": "npm install && npm run build",
+    "eslint": "eslint src"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.0",
+    "eslint": "^9.6.0"
   },
   "dependencies": {
     "gh-pages": "^6.1.1"
