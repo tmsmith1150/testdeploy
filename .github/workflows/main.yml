@@ -3,7 +3,6 @@ name: Lint workflow
 on:
   pull-request:
   branches:
-  -dev
   -main
 
   jobs:
